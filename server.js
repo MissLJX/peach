@@ -19,7 +19,10 @@ server.get('*', (req, res) => {
         res.end(`
       <!DOCTYPE html>
       <html lang="zh">
-        <head><title>Hello</title></head>
+        <head>
+            <title>Hello</title>
+            <meta charset='utf-8'>
+        </head>
         <body>${html}</body>
       </html>
     `)
